@@ -30,6 +30,7 @@ header nav ul {
     margin: 0;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap; /* Allow menu items to wrap on smaller screens */
 }
 
 header nav ul li {
@@ -40,6 +41,7 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px; /* Slightly smaller font size for more items */
 }
 
 .hero {
@@ -68,12 +70,12 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-.services {
+.services, .portfolio, .about, .testimonials, .blog, .careers, .contact {
     padding: 60px 0;
     text-align: center;
 }
 
-.services h2 {
+.services h2, .portfolio h2, .about h2, .testimonials h2, .blog h2, .careers h2, .contact h2 {
     font-size: 36px;
     margin-bottom: 40px;
 }
@@ -81,6 +83,7 @@ header nav ul li a {
 .service-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allow service items to wrap on smaller screens */
 }
 
 .service-item {
@@ -89,55 +92,12 @@ header nav ul li a {
     padding: 20px;
     background: #f4f4f4;
     border-radius: 5px;
+    min-width: 250px; /* Ensure service items don't get too small */
 }
 
 .service-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-.about {
-    background: #f4f4f4;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.contact {
-    padding: 60px 0;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact form input,
-.contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact form button {
-    background: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 footer {
